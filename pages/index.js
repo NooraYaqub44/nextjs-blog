@@ -20,8 +20,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="text-lg font-light">
-     
+      <section className={utilStyles.headingMd}>
         <p>Hello My name is Noora Yaqub I'm a Frontend Developer.</p>
         <p>
           I use technologies like React, Next, Redux, Chakra-ui, Tailwand-CSS,
@@ -34,8 +33,8 @@ export default function Home({ allPostsData }) {
           level. Designing and building websites are my passion and I want to
           bring designs to life for the world to see.
         </p>
-        <h3>GitHub:</h3>
-        <a href="https://github.com/NooraYaqub44">Noora Yaqub</a>
+        <h3>GitHub:
+        <a href="https://github.com/NooraYaqub44">Noora Yaqub</a></h3>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
