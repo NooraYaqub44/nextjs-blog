@@ -1,0 +1,17 @@
+.container {
+    max-width: 36rem;
+    padding:  2rem;
+    margin: 3rem auto 6rem;
+    background-color: rgb(211, 189, 174);
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(129, 110, 146);
+  }
+  
+  .backToHome {
+    margin: 3rem 0 0;
+  }
