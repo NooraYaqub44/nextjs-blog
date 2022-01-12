@@ -22,13 +22,18 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hello! My name is Noora, I'm a Software Engineer and intrested in web
-          develpopment and design
+          Frontend Developer || React, Next, Redux, Chakra-ui, Tailwand-CSS,
+          JavaScript, HTML5, CSS3, I graduated from Salahaddin University, Erbil
+          with a Bachelor of Software engineering. I'm an Honors graduate from
+          Recoded Coding Bootcamp with a focus on learning Reactjs. I have
+          experience building websites from the ground up using plain HTML, CSS,
+          and JavaScript but also using more advanced frameworks and
+          technologies like React, and Bootstrap to take my websites to the next
+          level. Designing and building websites are my passion and I want to
+          bring designs to life for the world to see. GitHub:
+          https://github.com/NooraYaqub44
         </p>
-        <p>
-          If you like to build websites Like this you can go to
-          <a href="https://nextjs.org/learn"> Next.js tutorial</a>.
-        </p>
+        <p></p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

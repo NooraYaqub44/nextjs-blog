@@ -52,3 +52,13 @@
   .lightText {
     color: #666;
   }
+
+  .navbar{
+    position: absolute;
+width: 1243px;
+height: 47px;
+padding-left: 18px;
+padding-top: 18px;
+
+background: #FAEAEA;
+  }
