@@ -3,6 +3,7 @@
     padding:  2rem;
     margin: 3rem auto 6rem;
     background-color: rgb(211, 189, 174);
+    border: 0.25rem solid black;
   }
   
   .header {

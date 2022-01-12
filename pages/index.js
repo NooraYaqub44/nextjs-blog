@@ -21,8 +21,8 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          Frontend Developer || React, Next, Redux, Chakra-ui, Tailwand-CSS,
+      <p>Hello My name is Noora Yaqub I'm a Frontend Developer.</p>
+        <p>I use technologies like React, Next, Redux, Chakra-ui, Tailwand-CSS,
           JavaScript, HTML5, CSS3, I graduated from Salahaddin University, Erbil
           with a Bachelor of Software engineering. I'm an Honors graduate from
           Recoded Coding Bootcamp with a focus on learning Reactjs. I have
@@ -30,10 +30,12 @@ export default function Home({ allPostsData }) {
           and JavaScript but also using more advanced frameworks and
           technologies like React, and Bootstrap to take my websites to the next
           level. Designing and building websites are my passion and I want to
-          bring designs to life for the world to see. GitHub:
-          https://github.com/NooraYaqub44
+          bring designs to life for the world to see. 
+          
         </p>
-        <p></p>
+        <h3>GitHub:</h3>
+<a href="https://github.com/NooraYaqub44">Noora Yaqub</a>
+        
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
