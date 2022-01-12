@@ -20,7 +20,8 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className="text-lg font-light">
+     
         <p>Hello My name is Noora Yaqub I'm a Frontend Developer.</p>
         <p>
           I use technologies like React, Next, Redux, Chakra-ui, Tailwand-CSS,
