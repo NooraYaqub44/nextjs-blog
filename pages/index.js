@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date";
+import Image from "next/image";
+import profile from "../public/images/david.jpg";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -16,42 +16,32 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <div className="m-5">
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hello My name is Noora Yaqub I'm a Frontend Developer.</p>
-        <p>
-          I use technologies like React, Next, Redux, Chakra-ui, Tailwand-CSS,
-          JavaScript, HTML5, CSS3, I graduated from Salahaddin University, Erbil
-          with a Bachelor of Software engineering. I'm an Honors graduate from
-          Recoded Coding Bootcamp with a focus on learning Reactjs. I have
-          experience building websites from the ground up using plain HTML, CSS,
-          and JavaScript but also using more advanced frameworks and
-          technologies like React, and Bootstrap to take my websites to the next
-          level. Designing and building websites are my passion and I want to
-          bring designs to life for the world to see.
-        </p>
-        <h3>GitHub:
-        <a href="https://github.com/NooraYaqub44">Noora Yaqub</a></h3>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+      <div className="flex place-content-center gap-1 ">
+        <div className=" box-content w-auto h-auto bg-black">
+          <Image src={profile} height={500} width={300} />
+        </div>
+        <div className=" w-auto h-auto text-xs font-serif p-3 border-8">
+          <h1 className="font-semibold p-top-4">Hey, I'm Noora</h1>
+          <p className="font-thin leading-relaxed text-center w-40">
+            I'm Noora Yaqub. I'm working with newest front-end frameworks like
+            Angular, React and Vue.
+            I graduated from Salahaddin University, Erbil with a Bachelor
+            of Software engineering.
+             I'm an Honors graduate from Recoded Coding Bootcamp with a
+            focus on learning Reactjs. 
+            I have experience building websites from the ground up
+            using plain HTML, CSS, and JavaScript but also using more advanced
+            frameworks and technologies like React, and Bootstrap to take my
+            websites to the next level. Designing and building websites are my
+            passion and I want to bring designs to life for the world to see.
+            Thank you 💜
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
